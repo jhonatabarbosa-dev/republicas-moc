@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Repúblicas MOC - Busca de Moradia</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="min-h-screen bg-slate-950 text-slate-100 transition-colors duration-300">
+    <main class="mx-auto flex min-h-screen w-full max-w-3xl flex-col items-center justify-center px-4 py-10">
+      <section class="w-full rounded-3xl border border-slate-700 bg-slate-900/90 p-8 shadow-xl shadow-slate-950/50 backdrop-blur transition duration-300">
+        <h1 class="text-center text-3xl font-semibold text-slate-100 sm:text-4xl">
+          Repúblicas MOC - Busca de Moradia
+        </h1>
+
+        <div class="mt-10 space-y-6">
+          <div>
+            <label for="instituicao" class="mb-3 block text-sm font-medium text-slate-300">
+              Faculdade
+            </label>
+            <select
+              id="instituicao"
+              class="w-full rounded-2xl border border-slate-700 bg-slate-900 px-4 py-3 text-slate-100 outline-none transition focus:border-sky-500 focus:ring-2 focus:ring-sky-200"
+            >
+              <option value="">Carregando faculdades...</option>
+            </select>
+            <p id="instituicao-endereco" class="mt-2 text-sm italic text-slate-400"></p>
+          </div>
+
+          <button
+            id="buscarBtn"
+            class="inline-flex w-full justify-center rounded-2xl bg-sky-600 px-6 py-3 text-base font-semibold text-white transition duration-200 hover:-translate-y-0.5 hover:bg-sky-700 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-sky-300"
+            type="button"
+          >
+            Buscar
+          </button>
+        </div>
+
+        <div id="resultados" class="mt-8 space-y-4"></div>
+      </section>
+    </main>
+
+    <script>
+
+      let instituicoesCache = [];
+
+      function atualizarEnderecoInstituicao() {
+        const select = document.getElementById('instituicao');
+        const enderecoEl = document.getElementById('instituicao-endereco');
+        const instituicaoId = select.value;
+        const instituicao = instituicoesCache.find((item) => String(item.id) === instituicaoId);
+        const endereco = instituicao ? instituicao.endereco || instituicao['endereço'] || '' : '';
+
+        enderecoEl.textContent = endereco || '';
+      }
+
+      async function carregarInstituicoes() {
+        const select = document.getElementById('instituicao');
+        try {
+          const response = await fetch('instituicoes.json');
+          if (!response.ok) {
+            throw new Error(`HTTP ${response.status} ao carregar instituicoes.json`);
+          }
+
+          const instituicoes = await response.json();
+          if (!Array.isArray(instituicoes)) {
+            throw new Error('Estrutura inválida em instituicoes.json');
+          }
+
+          instituicoesCache = instituicoes;
+          select.innerHTML = '<option value="">Selecione uma faculdade</option>';
+          instituicoes.forEach((instituicao) => {
+            const option = document.createElement('option');
+            option.value = instituicao.id;
+            option.textContent = instituicao.nome;
+            select.appendChild(option);
+          });
+
+          select.addEventListener('change', atualizarEnderecoInstituicao);
+          atualizarEnderecoInstituicao();
+        } catch (error) {
+          select.innerHTML = '<option value="">Erro ao carregar faculdades</option>';
+          console.error('Erro ao carregar instituicoes.json:', error);
+        }
+      }
+
+      function renderizarResultados(republicas) {
+        const container = document.getElementById('resultados');
+        container.innerHTML = '';
+
+        if (!republicas.length) {
+          container.innerHTML = '<p class="rounded-2xl border border-slate-700 bg-slate-900 p-4 text-slate-300">Nenhuma república encontrada para esta instituição no momento.</p>';
+          return;
+        }
+
+        republicas.forEach((republica) => {
+          const card = document.createElement('div');
+          card.className = 'rounded-3xl border border-slate-700 bg-slate-900 p-5 shadow-sm transition duration-200 hover:-translate-y-0.5 hover:border-sky-300 hover:shadow-md';
+          card.innerHTML = `
+            <div class="flex items-start justify-between">
+              <h2 class="text-lg font-semibold text-slate-100">${republica.nome}</h2>
+              <div class="text-right">
+                <div class="text-2xl font-bold text-sky-400">${republica.preco || 'A combinar'}</div>
+                ${republica.genero ? `<div class="mt-2"><span class="inline-block rounded-full bg-slate-700 px-3 py-1 text-xs font-medium text-slate-100">${republica.genero}</span></div>` : ''}
+              </div>
+            </div>
+            <p class="mt-2 text-sm leading-6 text-slate-300">${republica.endereco}</p>
+            <p class="mt-2 text-sm text-slate-400">${republica.detalhes || ''}</p>
+            <div class="mt-4 flex items-center gap-3" id="contact-${republica.id}"></div>
+          `;
+
+          container.appendChild(card);
+
+          const contactContainer = card.querySelector(`#contact-${republica.id}`);
+          const contato = republica.contato || '';
+          const apenasDigitos = contato.replace(/\D/g, '');
+
+          if (apenasDigitos.length >= 8) {
+            const link = document.createElement('a');
+            // adiciona +55 caso não tenha código de país
+            const tel = apenasDigitos.length === 11 ? `+55${apenasDigitos}` : `+55${apenasDigitos}`;
+            link.href = `tel:${tel}`;
+            link.className = 'inline-flex items-center gap-2 rounded-2xl bg-emerald-600 px-4 py-2 text-sm font-semibold text-white hover:bg-emerald-700';
+            link.textContent = `Ligar: ${contato}`;
+            contactContainer.appendChild(link);
+          } else {
+            const span = document.createElement('span');
+            span.className = 'text-sm text-slate-400';
+            span.textContent = contato || 'Contato indisponível';
+            contactContainer.appendChild(span);
+          }
+        });
+      }
+
+      async function buscarRepublicas() {
+        const select = document.getElementById('instituicao');
+        const instituicaoId = select.value;
+
+        if (!instituicaoId) {
+          renderizarResultados([]);
+          return;
+        }
+
+        try {
+          const response = await fetch('republicas.json');
+          const republicas = await response.json();
+          const filtradas = republicas.filter(
+            (republica) => String(republica.instituicao_id) === instituicaoId
+          );
+
+          renderizarResultados(filtradas);
+        } catch (error) {
+          const container = document.getElementById('resultados');
+          container.innerHTML = '<p class="rounded-2xl border border-red-900 bg-red-950 p-4 text-red-300">Erro ao carregar repúblicas.</p>';
+          console.error('Erro ao carregar republicas.json:', error);
+        }
+      }
+
+      document.getElementById('buscarBtn').addEventListener('click', buscarRepublicas);
+      carregarInstituicoes();
+    </script>
+  </body>
+</html>

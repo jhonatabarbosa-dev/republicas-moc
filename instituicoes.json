@@ -1,0 +1,14 @@
+[
+  { "id": 1, "nome": "UNIMONTES", "endereço": "Av. Prof. Rui Braga, s/n - Vila Mauriceia, Montes Claros - MG, 39401-089" },
+  { "id": 2, "nome": "UFMG", "endereço": "Av. Universitária, 1000 - Universitário, Montes Claros - MG, 39404-547" },
+  { "id": 3, "nome": "FUNORTE Campus JK", "endereço": "Av. Osmane Barbosa, 11.111 - JK, Montes Claros - MG, 39404-006" },
+  { "id": 4, "nome": "IFNMG", "endereço": "R. 2, 300 - Village do Lago I, Montes Claros - MG, 39404-058" },
+  { "id": 5, "nome": "UNIFIPMoc Afya", "endereço": "Av. Profa. Aida Mainartina Paraiso, 80 - Ibituruna, Montes Claros - MG, 39408-007" },
+  { "id": 6, "nome": "FCO", "endereço": "Av. Waldomiro Marcondes Oliveira, 20 - Ibituruna, Montes Claros - MG, 39401-303" },
+  { "id": 7, "nome": "Anhanguera", "endereço": "R. Urbino Viana, 195 - Centro, Montes Claros - MG, 39400-544" },
+  { "id": 8, "nome": "FASI", "endereço": "Rua Lirio Brant, 797 - Melo, Montes Claros - MG, 39401-063" },
+  { "id": 9, "nome": "Senac", "endereço": "Av. Dep. Esteves Rodrigues, 250 - Centro, Montes Claros - MG, 39400-215" },
+  { "id": 10, "nome": "SestSenat", "endereço": "Avenida A, 199 - Acacias, Montes Claros - MG, 39406-621" },
+  { "id": 11, "nome": "SENAI", "endereço": "Av. Dulce Sarmento, 601 - São José, Montes Claros - MG, 39400-318" },
+  { "id": 12, "nome": "Proz", "endereço": "Av. Cula Mangabeira, 555 - Santo Expedito, Montes Claros - MG, 39400-504" }
+]

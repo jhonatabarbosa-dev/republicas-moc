@@ -1,0 +1,192 @@
+[
+  {
+    "id": 1,
+    "nome": "Quarto Individual Feminino - Próximo ao Centro",
+    "endereco": "Bairro Todos os Santos (10 min a pé do Centro) - Montes Claros - MG",
+    "preco": "R$ 600",
+    "detalhes": "Incluso Aluguel e Água. Prédio familiar, ambiente arejado e seguro.",
+    "contato": "(38) 98865-0882",
+    "genero": "Feminino",
+    "instituicao_id": 6
+  },
+  {
+    "id": 2,
+    "nome": "Vaga Feminina em Casa Mobiliada",
+    "endereco": "Bairro Edgar Pereira (Próximo à Av. Sidney Chaves) - Montes Claros - MG",
+    "preco": "R$ 750",
+    "detalhes": "Incluso Aluguel, Água, Luz, Internet e Gás. Garagem para moto.",
+    "contato": "(38) 98834-3603",
+    "genero": "Feminino",
+    "instituicao_id": 2
+  },
+  {
+    "id": 3,
+    "nome": "Quarto Individual Feminino - Monte Olimpo",
+    "endereco": "Condomínio Monte Olimpo, Bairro Planalto - Montes Claros - MG",
+    "preco": "R$ 650",
+    "detalhes": "Tudo incluso no valor. Preferência para mulheres que estudem e trabalhem.",
+    "contato": "(38) 99156-7130",
+    "genero": "Feminino",
+    "instituicao_id": 3
+  },
+  {
+    "id": 4,
+    "nome": "Vaga Masculina em Apartamento - Monte Olimpo",
+    "endereco": "Condomínio Monte Olimpo, Bairro Planalto - Montes Claros - MG",
+    "preco": "R$ 650",
+    "detalhes": "Tudo incluso no valor (Água, luz, internet). Excelente localização.",
+    "contato": "(38) 99156-7130",
+    "genero": "Masculino",
+    "instituicao_id": 3
+  },
+  {
+    "id": 5,
+    "nome": "Apartamento Mobiliado para Universitários",
+    "endereco": "Bairro Ibituruna - Montes Claros - MG",
+    "preco": "A combinar",
+    "detalhes": "Casa toda mobiliada e equipada, pronta para morar.",
+    "contato": "(38) 99111-0381",
+    "genero": "Misto",
+    "instituicao_id": 5
+  },
+  {
+    "id": 6,
+    "nome": "Quarto Individual em Alvenaria",
+    "endereco": "Avenida Mestra Fininha, Bairro Funcionários - Montes Claros - MG",
+    "preco": "A consultar",
+    "detalhes": "Banheiro e cozinha compartilhada. Ótima localização próximo a comércios.",
+    "contato": "Ver no anúncio",
+    "genero": "Misto",
+    "instituicao_id": 1
+  },
+  {
+    "id": 7,
+    "nome": "Quarto Mobiliado Completo - Planalto",
+    "endereco": "Rua Geraldo Alves Pereira, Bairro Planalto - Montes Claros - MG",
+    "preco": "R$ 650",
+    "detalhes": "Quartos livres de despesas extras de água, luz, internet e gás.",
+    "contato": "(38) 99155-5555",
+    "genero": "Misto",
+    "instituicao_id": 3
+  },
+  {
+    "id": 8,
+    "nome": "Quarto Mobiliado - Região Sagrada Família",
+    "endereco": "Bairro Funcionários (Próximo à igreja Santo Expedito) - Montes Claros - MG",
+    "preco": "R$ 480",
+    "detalhes": "Incluso água, luz e internet. Possui garagem ou vaga para moto.",
+    "contato": "(38) 99754-8011",
+    "genero": "Misto",
+    "instituicao_id": 1
+  },
+  {
+    "id": 9,
+    "nome": "Quarto Feminino de Aluguel",
+    "endereco": "Rua Marcílio Martins Rêgo, Bairro N. S. Aparecida - Montes Claros - MG",
+    "preco": "R$ 375",
+    "detalhes": "Água e luz divididos igualmente. Próximo a ponto de ônibus e comércio.",
+    "contato": "(38) 99961-3783",
+    "genero": "Feminino",
+    "instituicao_id": 4
+  },
+  {
+    "id": 10,
+    "nome": "Aluguel de Quarto Mobiliado",
+    "endereco": "Bairro Todos os Santos (Próximo à área central) - Montes Claros - MG",
+    "preco": "R$ 550",
+    "detalhes": "Ambiente tranquilo, ideal para estudantes que buscam silêncio para focar.",
+    "contato": "(38) 99123-4567",
+    "genero": "Misto",
+    "instituicao_id": 6
+  },
+  {
+    "id": 11,
+    "nome": "Quarto com Suíte para Universitários",
+    "endereco": "Bairro Ibituruna - Montes Claros - MG",
+    "preco": "R$ 900",
+    "detalhes": "Suíte privativa em apartamento de alto padrão, internet de alta velocidade inclusa.",
+    "contato": "(38) 98822-1144",
+    "genero": "Misto",
+    "instituicao_id": 5
+  },
+  {
+    "id": 12,
+    "nome": "Vaga em República Masculina Central",
+    "endereco": "Rua Camilo Prates, Centro - Montes Claros - MG",
+    "preco": "R$ 500",
+    "detalhes": "Quarto compartilhado, ambiente muito resenha e focado nos estudos.",
+    "contato": "(38) 99199-8877",
+    "genero": "Masculino",
+    "instituicao_id": 1
+  },
+  {
+    "id": 13,
+    "nome": "Quarto Individual em Pensionato Familiar",
+    "endereco": "Bairro Vila Mauriceia - Montes Claros - MG",
+    "preco": "R$ 700",
+    "detalhes": "Incluso café da manhã e lavanderia. Ambiente muito seguro.",
+    "contato": "(38) 99955-4433",
+    "genero": "Misto",
+    "instituicao_id": 1
+  },
+  {
+    "id": 14,
+    "nome": "Vaga Feminina em República - Região do IBC",
+    "endereco": "Bairro Edgar Pereira - Montes Claros - MG",
+    "preco": "R$ 450",
+    "detalhes": "Contas divididas. Próximo a supermercados e ponto de ônibus direto.",
+    "contato": "(38) 98811-2233",
+    "genero": "Feminino",
+    "instituicao_id": 2
+  },
+  {
+    "id": 15,
+    "nome": "Kitnet Mobiliada para Estudantes",
+    "endereco": "Bairro Jaraguá - Montes Claros - MG",
+    "preco": "R$ 800",
+    "detalhes": "Espaço individual com cozinha e banheiro próprios. Entrada independente.",
+    "contato": "(38) 99166-7788",
+    "genero": "Misto",
+    "instituicao_id": 4
+  },
+  {
+    "id": 16,
+    "nome": "Quarto para Moças - Proximidades da FASI",
+    "endereco": "Bairro Jaraguá - Montes Claros - MG",
+    "preco": "R$ 520",
+    "detalhes": "Casa organizada, ambiente de estudo calmo e com internet dedicada.",
+    "contato": "(38) 99822-3344",
+    "genero": "Feminino",
+    "instituicao_id": 8
+  },
+  {
+    "id": 17,
+    "nome": "Quarto Masculino Estudantil",
+    "endereco": "Bairro Major Prates - Montes Claros - MG",
+    "preco": "R$ 480",
+    "detalhes": "Incluso água e luz. Casa ampla com ótima área de convivência.",
+    "contato": "(38) 98855-6677",
+    "genero": "Masculino",
+    "instituicao_id": 3
+  },
+  {
+    "id": 18,
+    "nome": "Vaga em República Mista - Centro",
+    "endereco": "Rua Coronel Altino de Freitas, Centro - Montes Claros - MG",
+    "preco": "R$ 400",
+    "detalhes": "Localização imbatível no coração da cidade. Despesas divididas.",
+    "contato": "(38) 99144-5566",
+    "genero": "Misto",
+    "instituicao_id": 7
+  },
+  {
+    "id": 19,
+    "nome": "Quarto de Aluguel Barato",
+    "endereco": "Bairro Santos Reis - Montes Claros - MG",
+    "preco": "R$ 350",
+    "detalhes": "Quarto simples e bem arejado. Perto de linhas de ônibus.",
+    "contato": "(38) 99911-8899",
+    "genero": "Misto",
+    "instituicao_id": 4
+  }
+]
