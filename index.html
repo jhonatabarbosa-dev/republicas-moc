@@ -44,16 +44,6 @@
 
       let instituicoesCache = [];
 
-      function atualizarEnderecoInstituicao() {
-        const select = document.getElementById('instituicao');
-        const enderecoEl = document.getElementById('instituicao-endereco');
-        const instituicaoId = select.value;
-        const instituicao = instituicoesCache.find((item) => String(item.id) === instituicaoId);
-        const endereco = instituicao ? instituicao.endereco || instituicao['endereço'] || '' : '';
-
-        enderecoEl.textContent = endereco || '';
-      }
-
       async function carregarInstituicoes() {
         const select = document.getElementById('instituicao');
         try {
@@ -82,6 +72,14 @@
           select.innerHTML = '<option value="">Erro ao carregar faculdades</option>';
           console.error('Erro ao carregar instituicoes.json:', error);
         }
+      }
+
+      function atualizarEnderecoInstituicao() {
+        const select = document.getElementById('instituicao');
+        const enderecoEl = document.getElementById('instituicao-endereco');
+        const instituicaoId = Number(select.value);
+        const instituicao = instituicoesCache.find((item) => Number(item.id) === instituicaoId);
+        enderecoEl.textContent = instituicao ? instituicao.endereco || instituicao['endereço'] || '' : '';
       }
 
       function renderizarResultados(republicas) {
@@ -132,21 +130,38 @@
         });
       }
 
+      function enderecoContemBairro(endereco, bairros) {
+        if (!endereco || !bairros || !bairros.length) {
+          return false;
+        }
+
+        const enderecoMinusculo = endereco.toLowerCase();
+        return bairros.some((bairro) => enderecoMinusculo.includes(bairro.toLowerCase()));
+      }
+
       async function buscarRepublicas() {
         const select = document.getElementById('instituicao');
-        const instituicaoId = select.value;
+        const instituicaoId = Number(select.value);
 
         if (!instituicaoId) {
           renderizarResultados([]);
           return;
         }
 
+        const instituicao = instituicoesCache.find((item) => Number(item.id) === instituicaoId);
+        const enderecoEl = document.getElementById('instituicao-endereco');
+        enderecoEl.textContent = instituicao ? instituicao.endereco || instituicao['endereço'] || '' : '';
+        const bairrosPermitidos = (instituicao && Array.isArray(instituicao.bairros_proximos) && instituicao.bairros_proximos.length)
+          ? instituicao.bairros_proximos
+          : ['Centro'];
+
         try {
           const response = await fetch('republicas.json');
           const republicas = await response.json();
-          const filtradas = republicas.filter(
-            (republica) => String(republica.instituicao_id) === instituicaoId
-          );
+          const filtradas = republicas.filter((republica) => {
+            const endereco = (republica.endereco || republica['endereço'] || '').toLowerCase();
+            return enderecoContemBairro(endereco, bairrosPermitidos);
+          });
 
           renderizarResultados(filtradas);
         } catch (error) {

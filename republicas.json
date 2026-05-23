@@ -7,7 +7,7 @@
     "detalhes": "Incluso Aluguel e Água. Prédio familiar, ambiente arejado e seguro.",
     "contato": "(38) 98865-0882",
     "genero": "Feminino",
-    "instituicao_id": 6
+    "instituicao_id": 1
   },
   {
     "id": 2,
@@ -17,7 +17,7 @@
     "detalhes": "Incluso Aluguel, Água, Luz, Internet e Gás. Garagem para moto.",
     "contato": "(38) 98834-3603",
     "genero": "Feminino",
-    "instituicao_id": 2
+    "instituicao_id": 3
   },
   {
     "id": 3,
@@ -27,7 +27,7 @@
     "detalhes": "Tudo incluso no valor. Preferência para mulheres que estudem e trabalhem.",
     "contato": "(38) 99156-7130",
     "genero": "Feminino",
-    "instituicao_id": 3
+    "instituicao_id": 2
   },
   {
     "id": 4,
@@ -37,7 +37,7 @@
     "detalhes": "Tudo incluso no valor (Água, luz, internet). Excelente localização.",
     "contato": "(38) 99156-7130",
     "genero": "Masculino",
-    "instituicao_id": 3
+    "instituicao_id": 4
   },
   {
     "id": 5,
@@ -57,7 +57,7 @@
     "detalhes": "Banheiro e cozinha compartilhada. Ótima localização próximo a comércios.",
     "contato": "Ver no anúncio",
     "genero": "Misto",
-    "instituicao_id": 1
+    "instituicao_id": 12
   },
   {
     "id": 7,
@@ -67,7 +67,7 @@
     "detalhes": "Quartos livres de despesas extras de água, luz, internet e gás.",
     "contato": "(38) 99155-5555",
     "genero": "Misto",
-    "instituicao_id": 3
+    "instituicao_id": 10
   },
   {
     "id": 8,
@@ -77,12 +77,12 @@
     "detalhes": "Incluso água, luz e internet. Possui garagem ou vaga para moto.",
     "contato": "(38) 99754-8011",
     "genero": "Misto",
-    "instituicao_id": 1
+    "instituicao_id": 12
   },
   {
     "id": 9,
     "nome": "Quarto Feminino de Aluguel",
-    "endereco": "Rua Marcílio Martins Rêgo, Bairro N. S. Aparecida - Montes Claros - MG",
+    "endereco": "Rua Marcílio Martins Rêgo, Bairro N. S. Aparecida, Centro - Montes Claros - MG",
     "preco": "R$ 375",
     "detalhes": "Água e luz divididos igualmente. Próximo a ponto de ônibus e comércio.",
     "contato": "(38) 99961-3783",
@@ -107,7 +107,7 @@
     "detalhes": "Suíte privativa em apartamento de alto padrão, internet de alta velocidade inclusa.",
     "contato": "(38) 98822-1144",
     "genero": "Misto",
-    "instituicao_id": 5
+    "instituicao_id": 9
   },
   {
     "id": 12,
@@ -117,7 +117,7 @@
     "detalhes": "Quarto compartilhado, ambiente muito resenha e focado nos estudos.",
     "contato": "(38) 99199-8877",
     "genero": "Masculino",
-    "instituicao_id": 1
+    "instituicao_id": 7
   },
   {
     "id": 13,
@@ -137,7 +137,7 @@
     "detalhes": "Contas divididas. Próximo a supermercados e ponto de ônibus direto.",
     "contato": "(38) 98811-2233",
     "genero": "Feminino",
-    "instituicao_id": 2
+    "instituicao_id": 3
   },
   {
     "id": 15,
@@ -147,12 +147,12 @@
     "detalhes": "Espaço individual com cozinha e banheiro próprios. Entrada independente.",
     "contato": "(38) 99166-7788",
     "genero": "Misto",
-    "instituicao_id": 4
+    "instituicao_id": 11
   },
   {
     "id": 16,
     "nome": "Quarto para Moças - Proximidades da FASI",
-    "endereco": "Bairro Jaraguá - Montes Claros - MG",
+    "endereco": "Rua Lírio Brant, Centro - Montes Claros - MG",
     "preco": "R$ 520",
     "detalhes": "Casa organizada, ambiente de estudo calmo e com internet dedicada.",
     "contato": "(38) 99822-3344",
@@ -167,7 +167,7 @@
     "detalhes": "Incluso água e luz. Casa ampla com ótima área de convivência.",
     "contato": "(38) 98855-6677",
     "genero": "Masculino",
-    "instituicao_id": 3
+    "instituicao_id": 12
   },
   {
     "id": 18,
@@ -177,16 +177,26 @@
     "detalhes": "Localização imbatível no coração da cidade. Despesas divididas.",
     "contato": "(38) 99144-5566",
     "genero": "Misto",
-    "instituicao_id": 7
+    "instituicao_id": 13
   },
   {
     "id": 19,
     "nome": "Quarto de Aluguel Barato",
-    "endereco": "Bairro Santos Reis - Montes Claros - MG",
+    "endereco": "Rua Dr. Santos, Centro - Montes Claros - MG",
     "preco": "R$ 350",
     "detalhes": "Quarto simples e bem arejado. Perto de linhas de ônibus.",
     "contato": "(38) 99911-8899",
     "genero": "Misto",
-    "instituicao_id": 4
+    "instituicao_id": 14
+  },
+  {
+    "id": 20,
+    "nome": "Quarto Universitário Premium",
+    "endereco": "Av. Coronel Prates, Centro - Montes Claros - MG",
+    "preco": "R$ 600",
+    "detalhes": "Próximo a lanchonetes e pontos de ônibus. Internet dedicada para estudos.",
+    "contato": "(38) 99911-2233",
+    "genero": "Misto",
+    "instituicao_id": 15
   }
 ]
