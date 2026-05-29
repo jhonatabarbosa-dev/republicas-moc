@@ -9,19 +9,19 @@
     "id": 2,
     "nome": "UFMG",
     "endereco": "Av. Universitária, 1000 - Universitário, Montes Claros - MG, 39404-547",
-    "bairros_proximos": ["Planalto", "Jaraguá", "Centro"]
+    "bairros_proximos": ["Planalto", "Jaraguá"]
   },
   {
     "id": 3,
     "nome": "Funorte Campus JK",
     "endereco": "Av. Osmane Barbosa, 11.111 - JK, Montes Claros - MG, 39404-006",
-    "bairros_proximos": ["Edgar Pereira", "Santos Reis", "Centro"]
+    "bairros_proximos": ["Edgar Pereira", "Santos Reis"]
   },
   {
     "id": 4,
     "nome": "IFNMG",
     "endereco": "R. 2, 300 - Village do Lago I, Montes Claros - MG, 39404-058",
-    "bairros_proximos": ["Planalto", "Jaraguá", "Centro"]
+    "bairros_proximos": ["Planalto", "Jaraguá"]
   },
   {
     "id": 5,
@@ -39,13 +39,13 @@
     "id": 7,
     "nome": "Anhanguera",
     "endereco": "R. Urbino Viana, 195 - Centro, Montes Claros - MG, 39400-544",
-    "bairros_proximos": ["Centro"]
+    "bairros_proximos": ["Todos os Santos", "Ibituruna", "Vila Mauriceia","Centro"]
   },
   {
     "id": 8,
     "nome": "FASI",
     "endereco": "Rua Lirio Brant, 797 - Melo, Montes Claros - MG, 39401-063",
-    "bairros_proximos": ["Centro"]
+    "bairros_proximos": ["Todos os Santos", "Ibituruna", "Vila Mauriceia","Centro"]
   },
   {
     "id": 9,
@@ -57,13 +57,13 @@
     "id": 10,
     "nome": "SestSenat",
     "endereco": "Avenida A, 199 - Acacias, Montes Claros - MG, 39406-621",
-    "bairros_proximos": ["Planalto", "Jaraguá", "Centro"]
+    "bairros_proximos": ["Planalto", "Jaraguá"]
   },
   {
     "id": 11,
     "nome": "SENAI",
     "endereco": "Av. Dulce Sarmento, 601 - São José, Montes Claros - MG, 39400-318",
-    "bairros_proximos": ["Centro"]
+    "bairros_proximos": ["Funcionários","Centro"]
   },
   {
     "id": 12,
@@ -75,18 +75,18 @@
     "id": 13,
     "nome": "Prominas",
     "endereco": "Rua Lírio Brant, 511 - Melo, Montes Claros - MG, 39401-063",
-    "bairros_proximos": ["Centro"]
+    "bairros_proximos": ["Todos os Santos", "Ibituruna", "Vila Mauriceia","Centro"]
   },
   {
     "id": 14,
     "nome": "Faculdade Fael",
     "endereco": "Edifício Herlindo Silveira - R. Dr. Santos, 362 - sala 5 - Centro, Montes Claros - MG, 39400-001",
-    "bairros_proximos": ["Centro"]
+    "bairros_proximos": ["Vila Mauriceia","Centro"]
   },
   {
     "id": 15,
     "nome": "Uniasselvi",
     "endereco": "Av. Coronel Prates, 348 Santa Casa, 12º Andar - Centro, Montes Claros - MG, 39400-104",
-    "bairros_proximos": ["Centro"]
+    "bairros_proximos": ["Vila Mauriceia","Centro"]
   }
 ]
