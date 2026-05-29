@@ -2,7 +2,7 @@
 
 Um sistema simplificado e inteligente projetado para auxiliar estudantes que vêm de fora de Montes Claros (MOC) a encontrarem moradias (repúblicas e pensionatos) próximas às suas respectivas instituições de ensino. 
 
-Este projeto foi desenvolvido como um MVP (Mínimo Produto Viável) em apenas 3 dias durante o workshop **"Construção de Software Completo com Auxílio de IA"**, na IV Semana de Sistemas de Informação e I Semana de Inteligência Artificial da **Unimontes**.
+Este projeto foi desenvolvido como um MVP (Mínimo Produto Viável) em apenas 3 dias durante o workshop **"Construção de Software Completo com Auxílio de IA"**, na II Semana da Ciência, tecnologia e Engenharia da **Unimontes**.
 
 ## 🚀 Link do Projeto
 O sistema está publicado e pode ser testado em tempo real através do link:
